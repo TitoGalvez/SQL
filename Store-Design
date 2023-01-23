@@ -1,0 +1,28 @@
+**Created a clothing store database**
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, color TEXT, size TEXT, price INTEGER);
+
+INSERT INTO store VALUES
+(1, "Shirt", "Black", "Small", 10),
+(2, "Shorts", "Black", "Small", 15),
+(3, "Belt", "Brown", "XL", 15),
+(4, "Shoes", "White", "Medium", 75),
+(5, "Underwear", "White", "Medium", 10),
+(6, "Pants", "White", "Large", 15),
+(7, "Socks", "Gray", "Medium", 10),
+(8, "Chain", "White", "XXL", 50),
+(9, "Tie", "Beige", "Medium", 10),
+(10, "Braclet", "White", "Medium", 25),
+(11, "Watch", "Gold", "LArge", 100),
+(12, "Hat", "White", "Medium", 10),
+(13, "Jacket", "White", "XL", 30),
+(14, "Glasses", "Black", "Medium", 20),
+(15, "Tank Top", "White", "Large", 5);
+
+**Displayed table by name**
+SELECT * FROM store
+ORDER BY name asc;
+
+**Displayed store by price**
+SELECT * FROM store
+ORDER BY price asc;
